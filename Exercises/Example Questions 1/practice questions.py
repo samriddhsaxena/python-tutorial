@@ -5,10 +5,10 @@ area = length*breadth
 print(area)
 
 # Create a program that takes a user's name and age as input and prints a greeting message
-# name = input("Enter your name: ")
-# age = (input("Enter your age: "))
-# greeting = "Good Morning "+ name+". Your age is "+age+"."
-# print(greeting)
+name = input("Enter your name: ")
+age = (input("Enter your age: "))
+greeting = "Good Morning "+ name+". Your age is "+age+"."
+print(greeting)
 
 # Write a program to check if a number is even or odd
 a = int(input("Enter the number to be checked: "))
