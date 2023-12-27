@@ -48,3 +48,41 @@ temp = a
 a = b
 b = temp
 print(a,b)
+
+# Given a list of numbers, find the sum and average
+
+numbers = [1,23,4,56,7]
+sum = 0
+for i in range(len(numbers)):
+    sum += numbers[i]
+print("sum",sum)
+avg = sum/len(numbers)
+print("avg",avg)
+
+# Create a program that takes a temperature in Celsius and converts it to Kelvin
+
+celcius = int(input("Enter the temperature in celcius: "))
+kelvin = celcius + 273.15
+print('kelvin',kelvin)
+
+# Given a list of names, concatenate them into a single string separated by spaces'
+names = ['aditya','bhavesh','devansh','elizabeth','faizal']
+finalList =""
+for i in range(len(names)):
+    finalList += names[i] + " "
+print(finalList)
+
+# Calculate the area and circumference of a circle given its radius
+
+r = 10
+area = 3.14*r*r
+circum = 2*3.14*r
+print("area",area)
+print("circum", circum)
+
+# Implement a program that converts a given number of minutes into hours and minute
+
+givenMins = 184
+hours = int(givenMins/60)
+mins = givenMins%60
+print(hours," hours ",mins," mins")
