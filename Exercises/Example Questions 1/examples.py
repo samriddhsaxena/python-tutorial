@@ -34,3 +34,35 @@ print(fruits[0])
 print(fruits[1])
 print(fruits[2])
 print(fruits[3])
+
+# Write a program that checks if a given number is positive, negative, or zero.
+
+n = int(input("Enter your number: "))
+if(n>0):
+    print("Number is positive.")
+elif(n==0):
+    print("Number is zero.")
+else:
+    print("Number is negative.")
+
+# Create a loop that prints the first 10 even numbers.
+    
+for i in range(1,11):
+    print(2*i)
+
+#Implement a program that finds the largest number in a list.(Method1)
+
+nums = [1,223,4,1156,227,89]
+nums.sort()
+print(nums[-1])
+
+#Implement a program that finds the largest number in a list.(Method2)
+
+nums = [1,223,4,1156,227,89]
+nums.sort()
+nums.reverse()
+print(nums[0])
+
+#Implement a program that finds the largest number in a list.(Method3)
+nums = [1,223,4,1156,227,89]
+print(max(nums))

@@ -86,3 +86,70 @@ givenMins = 184
 hours = int(givenMins/60)
 mins = givenMins%60
 print(hours," hours ",mins," mins")
+
+# Create a program that takes a year as input and checks if it is a leap year or not
+
+year = int(input("Enter the year: "))
+if((year%4==0 and year%100!=0) or (year%400==0)):
+    print("The year is leap year.")
+else:
+    print("The year is not a leap year.")
+
+# Given a list of integers, find all the even numbers and store them in a new list
+
+integers = [1,23,4,56,7,89,10,112]
+updatedList = []
+for i in range(len(integers)):
+    if(integers[i]%2==0):
+        updatedList.append(integers[i])
+    else:
+        pass
+print(updatedList)
+
+# Create a program that generates the Fibonacci sequence up to a given number of terms/
+
+def fibo(n):
+    if n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fibo_seq = fibo(n - 1)
+        fibo_seq.append(fibo_seq[-1] + fibo_seq[-2])
+        return fibo_seq
+print(fibo(10))
+
+# Given a list of names, print all names starting with the letter 'A'
+
+names = ["Aditya","Priyanka","Anjali","Divya","Ankita","Jyoti"]
+for i in names:
+    if(i[0]=='A'):
+        print(i)
+    else:
+        pass
+
+# Implement a program that prints the multiplication table of a given number
+    
+n = int(input("Enter the number: "))
+for i in range(1,11):
+    print(n*i)
+
+# Write a program that calculates the factorial of a given number
+    
+def fac(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fac(n - 1)
+
+result = fac(5)
+print(result)
+
+# Given a list of words, count the number of words with more than five characters
+
+list2 =["given","list","code","factorial","python","readme"]
+count = 0
+for i in list2:
+    if len(i)>5:
+        count+=1
+print(count)
