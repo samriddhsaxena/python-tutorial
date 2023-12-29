@@ -153,3 +153,59 @@ for i in list2:
     if len(i)>5:
         count+=1
 print(count)
+
+# Given a list of numbers, create a function to find the sum of all positive number
+def sumFn():
+    nums = [-1,23,4,56,-7]
+    sum = 0
+    for num in nums:
+        if(num>0):
+            sum+=num
+        else:
+            pass
+    print(sum)
+sumFn()
+
+# Write a Python function to check if a given string is a palindrome
+
+def paliFn(str):
+    rev = str[::-1]
+    if(rev == str):
+        print("Yes it is palindrome.")
+    else:
+        print("Not a palindrome.")
+paliFn("LALALAL")
+
+# Create a function to find the square of each element in a given list
+
+def sqFn():
+    sqList = [1,2,3,4,5]
+    for i in sqList:
+        print(i**2)
+
+sqFn()
+
+# Calculate the area of a triangle given its base and height using a function
+
+def areaofTri(base,height):
+    area = 0.5*base*height
+    return area
+print("Area",areaofTri(1,2))
+
+# Create a function that takes a list of strings and returns the list sorted alphabetically
+
+def sortListFn():
+    strList = ["area","outline","timeline","readme","examples","microsoft"]
+    strList.sort()
+    print(strList)
+sortListFn()
+
+# Write a function that takes two lists and returns their intersection (common elements)
+
+def interFn(list1, list2):
+    inter = set(list1) & set(list2)
+    return inter
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+result = interFn(list1, list2)
+print("Intersection:", result)
