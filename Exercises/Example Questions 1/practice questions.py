@@ -209,3 +209,57 @@ list1 = [1, 2, 3, 4, 5]
 list2 = [3, 4, 5, 6, 7]
 result = interFn(list1, list2)
 print("Intersection:", result)
+
+# Given a string, write a function to remove all vowels from it and return the modified string'
+
+def remVowFn():
+    modStr = ""
+    str = input("Enter the string: ")
+    for i in str:
+        if((i=='a')or (i=='e')or (i=='i')or (i=='o')or (i=='u')):
+            pass
+        else:
+            modStr = modStr+i
+    print(modStr)
+remVowFn()
+
+# Write a Python program to find the length of the longest word in a sentence
+
+def longestWordFn():
+    sent = input("Enter the sentence: ")
+    words = sent.split()
+    longestWord = ""
+    longestWordLen = 0
+    for word in words: 
+        currWordLen = len(word)
+        if currWordLen>longestWordLen:
+            longestWord = word
+            longestWordLen = currWordLen
+    print(longestWord)
+    print(longestWordLen)
+longestWordFn()
+
+# Create a function that takes a sentence as input and returns the sentence in reverse orde
+
+def revSent():
+    sent = input("Enter the sentence: ")
+    words = sent.split()
+    rev = " ".join(words[::-1])
+    print(rev)
+revSent()
+
+# Implement a program that takes a sentence and a word as input and checks if the word is present in the sentence.
+
+def dupWordFn():
+    sent = input("Enter the sentence: ")
+    reqWord = input("Required word: ")
+    words = sent.split()
+    count = words.count(reqWord)
+    if count > 1:
+        print("Duplicate of '{}' present. Found {} times.".format(reqWord, count))
+    elif count == 1:
+        print("No duplicates of '{}' present. Found 1 time.".format(reqWord))
+    else:
+        print("No occurrences of '{}' in the sentence.".format(reqWord))
+
+dupWordFn()
