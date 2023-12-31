@@ -66,3 +66,27 @@ print(nums[0])
 #Implement a program that finds the largest number in a list.(Method3)
 nums = [1,223,4,1156,227,89]
 print(max(nums))
+
+#Given a list of numbers, find the sum and average using built-in functions
+
+nums = [1,23,4,56,7]
+sum_of_nums = sum(nums)
+avg_of_nums = sum_of_nums/len(nums)
+print(sum_of_nums)
+print(avg_of_nums)
+
+# Create a list of fruits and add a new fruit to the list.
+
+fruits = ["apple","banana","mango","watermelon"]
+print(fruits)
+fruits.append("orange")
+print(fruits)
+
+# Access elements in a tuple using indexing.
+
+tupNum = (1,23,4,56,7)
+print(tupNum[0])
+print(tupNum[1])
+print(tupNum[2])
+print(tupNum[3])
+print(tupNum[4])

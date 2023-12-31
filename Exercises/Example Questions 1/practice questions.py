@@ -263,3 +263,74 @@ def dupWordFn():
         print("No occurrences of '{}' in the sentence.".format(reqWord))
 
 dupWordFn()
+
+# Given two lists of numbers, concatenate them into a single list
+
+list1 = [10,20,30,40]
+list2 = [11,22,33,44]
+res = list1 + list2
+print(res)
+
+# Write a program that finds the largest and smallest elements in a list
+
+list1 = [10,20,30,40]
+smallestNum = min(list1)
+largestNum = max(list1)
+print(smallestNum)
+print(largestNum)
+
+# Write a Python program to count the occurrences of each element in a given list
+
+listOcc = [1,2,2,3,3,3,4,4,4,4]
+occList = {}
+
+for element in listOcc:
+    if element in occList:
+        occList[element] += 1
+    else:
+        occList[element] = 1
+print("Occurrences of each element:")
+for element, occList in occList.items():
+    print(element,":",occList)
+
+# Given a list of names, remove all duplicate names and print the unique names
+    
+names = ["adi","aditya","adipurush","adi","rahul","ramesh","rahul","ramesh"]
+uniqueNames = []
+
+for name in names:
+    if name not in uniqueNames:
+        uniqueNames.append(name)
+
+for name in uniqueNames:
+    print(name)
+
+# Create a function that takes a list of strings and returns the list sorted by the length of the strings
+    
+def sortByLength(strings):
+    return sorted(strings, key=len)
+
+stringList = ["apple", "banana", "kiwi", "orange", "grape"]
+sortedList = sortByLength(stringList)
+
+print("Original List:", stringList)
+print("Sorted List by Length:", sortedList)
+
+# Write a program that checks if a given list is sorted in ascending order
+
+ascList = ["just","looking","like","a","wow"]
+updatedList = ascList.sort()
+
+if ascList==sorted(ascList):
+    print("Yes it is sorted.")
+else:
+    print("Not sorted.")
+
+# Implement a function that takes two lists and returns their union (all unique elements from both lists)
+    
+def unionFn():
+    listA = [1,2,3,4,5]
+    listB = [4,5,6,7,8]
+    unionSet = set(listA).union(set(listB))
+    print(unionSet)
+unionFn()
