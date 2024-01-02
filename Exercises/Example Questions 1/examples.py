@@ -93,15 +93,15 @@ print(tupNum[4])
 
 # Create a dictionary to store information about a person (name, age, address)
 
-# info = {
-#     "name": "Samriddh",
-#     "age": 20,
-#     "address": "Bhopal"
-# }
+info = {
+    "name": "Samriddh",
+    "age": 20,
+    "address": "Bhopal"
+}
 
-# print(info["name"])
-# print(info["age"])
-# print(info["address"])
+print(info["name"])
+print(info["age"])
+print(info["address"])
 
 #  Add a new key-value pair to an existing dictionary
 
