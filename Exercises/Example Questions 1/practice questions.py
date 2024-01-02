@@ -334,3 +334,41 @@ def unionFn():
     unionSet = set(listA).union(set(listB))
     print(unionSet)
 unionFn()
+
+# Given two dictionaries, merge them into a single dictionary 
+
+dict1 = {
+    "name" : "Samriddh",
+    "age" : 20
+}
+dict2 = {
+    "semester" : 3,
+    "address" : "Bhopal"
+}
+dict1.update(dict2)
+print(dict1)
+
+# Implement a function that removes a key-value pair from a dictionary
+
+dict1 = {
+    "name" : "Samriddh",
+    "age" : 20
+}
+del dict1["name"]
+print(dict1)
+
+# Create a program that checks if two sets have any elements in common
+
+def commonElementsFn(set1, set2):
+    commonElements = set1.intersection(set2)
+    return bool(commonElements)
+
+setA = {1, 2, 3, 4, 5}
+setB = {4, 5, 6, 7, 8}
+
+result = commonElementsFn(setA, setB)
+
+if result:
+    print("The sets have common elements.")
+else:
+    print("The sets do not have any common elements.")

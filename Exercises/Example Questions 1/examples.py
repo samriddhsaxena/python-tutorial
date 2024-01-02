@@ -90,3 +90,36 @@ print(tupNum[1])
 print(tupNum[2])
 print(tupNum[3])
 print(tupNum[4])
+
+# Create a dictionary to store information about a person (name, age, address)
+
+# info = {
+#     "name": "Samriddh",
+#     "age": 20,
+#     "address": "Bhopal"
+# }
+
+# print(info["name"])
+# print(info["age"])
+# print(info["address"])
+
+#  Add a new key-value pair to an existing dictionary
+
+info = {
+    "name": "Samriddh",
+    "age": 20,
+    "address": "Bhopal"
+}
+
+info["semester"] = 3
+print(info)
+
+# Create a set of unique numbers from a list of numbers.
+
+nums = [1,2,2,3,3,3,4,4,4,4]
+uniqueNums = []
+
+for num in nums:
+    if num not in uniqueNums:
+        uniqueNums.append(num)
+print(uniqueNums)
